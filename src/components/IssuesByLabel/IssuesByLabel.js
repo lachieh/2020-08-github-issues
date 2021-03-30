@@ -12,7 +12,7 @@ export default function IssuesByLabel() {
       .then(data => {
         setIssues(data)
       })
-  }, [])
+  }, [name])
 
   return (
     <>

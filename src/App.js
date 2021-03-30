@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react';
-import { Link, NavLink, Redirect, Route, Switch, useHistory } from 'react-router-dom';
+import { NavLink, Redirect, Route, Switch } from 'react-router-dom';
 import './App.css';
 import IssueDetail from './components/IssueDetail/IssueDetail';
 import IssueList from './components/IssueList/IssueList';
@@ -7,14 +6,6 @@ import IssuesByLabel from './components/IssuesByLabel/IssuesByLabel';
 import Users from './components/Users/Users';
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(false);
-  const history = useHistory();
-
-  // useEffect(() => {
-  //   if (!loggedIn) {
-  //     history.push('/');
-  //   }
-  // }, [loggedIn, history]);
 
   return (
     <>
